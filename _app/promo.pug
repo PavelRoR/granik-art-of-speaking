@@ -1,0 +1,25 @@
+-var path = '../'
+-var head_url = 'https://granik.mastervision.su/art-of-speaking/promo/';
+-var head_title = 'Подписывайтесь на наш Телеграм-канал и получайте много полезного контента!';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var footer_title = true
+
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/promo/1.main.pug
+		include pug/base/footer.pug
+		include pug/base/scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
