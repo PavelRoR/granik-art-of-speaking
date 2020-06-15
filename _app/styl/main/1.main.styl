@@ -12,6 +12,9 @@
 	font-size: 22px
 	font-family: M
 	margin 20px 0
+.main-info
+	span
+		display inline-block
 .main-img
 	display block
 	width 100%
@@ -62,6 +65,7 @@
 	font-size: 16px
 	display block
 	margin 0 auto 10px
+	border-radius: 0
 	&-mail-main
 		float left
 		margin-bottom: 0
@@ -177,3 +181,7 @@ input:-webkit-autofill
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
+::-webkit-input-placeholder {color:#fff; opacity:1;}/* webkit */
+::-moz-placeholder          {color:#fff; opacity:1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff; opacity:1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff; opacity:1;}/* IE */
