@@ -1,0 +1,26 @@
+-var path = '../';
+-var head_url = 'https://granik.mastervision.su/art-of-speaking/remind/';
+-var head_title = '«Искусство говорить как способ достижения любой цели»';
+-var head_description = '3-дневный мастер-класс Кристины Граник';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var footer_title = true
+-var oferta = 'https://mastervision.su/oferta.docx'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main.remind
+			.container
+				include pug/base/header.pug
+				h1.main-title.remind-main-title Вы зарегистрированы на мастер-класс
+					br
+					a(href="https://granik.mastervision.su/art-of-speaking/" target="_blank") «Новая системная психология»
+				h2.main-subtitle.remind-main-subtitle Не пропустите вебинар, спланируйте свои дела так, чтобы ничего вас не отвлекало
+		include pug/base/footer.pug
+		include pug/scripts/body_bottom_scripts

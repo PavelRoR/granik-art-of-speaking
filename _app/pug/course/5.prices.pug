@@ -1,0 +1,91 @@
+-full_1 = '12 900р.';
+-full_2 = '27 900р.';
+-full_3 = '39 900р.';
+
+-sale_1='3 000р.';
+-sale_2='6 000р.';
+-sale_3='9 000р.';
+
+-today_1='9 900р.'
+-today_2='21 900р.'
+-today_3='30 900р.'
+
+-link_1='https://shop.mastervision.su/?r=ordering/cart/as1&id=5052&clean=true&lg=ru'
+-link_2='https://shop.mastervision.su/?r=ordering/cart/as1&id=5057&clean=true&lg=ru'
+-link_3='https://shop.mastervision.su/?r=ordering/cart/as1&id=5061&clean=true&lg=ru'
+
+-prepLink = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=5066&clean=true&lg=ru'
+
+section#prices
+	.container
+		+gt('','Выберите свой вариант участия:')
+		.packets
+			.row
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Базовый
+						.packet-body
+							h5.packet-body-title включает 11 уроков + онлайн-встречи с ответами на вопросы
+								span Модуль 1
+							a.more-button(href="#Modal-1") подробнее
+							p.packet-body-text Подходит для тех, кто хочет прокачать свою речь: усовершенствовать качество звучания и формулировку мысли, а также проработать свои внутренние препятствия, мешающие свободно выражать себя во время речи
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span=full_1
+							p.cost.cost-sale Скидка:
+								span#sale-1=sale_1
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1=today_1
+							+b('',link_1,'Выбрать','_blank','link-1')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Основной
+						.packet-body
+							h5.packet-body-title включает 30 уроков + онлайн-встречи с ответами на вопросы
+								span Модуль 1 + Модуль 2 + Модуль 3
+							a.more-button(href="#Modal-2") подробнее
+							p.packet-body-text Подходит тем, кто хочет не только повысить качество своей речи, но и связать свою речь с реализацией собственных целей и желаний. Участники подробно изучат все аспекты ведения диалога с другими людьми. А также на примере собственной презентации поймут, как доносить мысль так, чтобы окружающие соглашались с ней и начинали поддерживать
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span=full_2
+							p.cost.cost-sale Скидка:
+								span#sale-2=sale_2
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2=today_2
+							+b('',link_2,'Выбрать','_blank','link-2')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Премиум
+						.packet-body
+							h5.packet-body-title включает 30 уроков + онлайн-встречи с ответами на вопросы + практические занятия
+								span Модуль 1 + Модуль 2 + Модуль 3 + Модуль 4 + Модуль 5
+							a.more-button(href="#Modal-3") подробнее
+							p.packet-body-text Подходит людям, которые любят не только получать знания, но и сразу же закреплять их, применяя на практике.Четыре живые практические занятия, входящие в пакет, позволят получить персональные рекомендации и убедиться, что материал усвоен верно
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span=full_3
+							p.cost.cost-sale Скидка:
+								span#sale-3=sale_3
+							p.cost.cost-today Стоимость сегодня:
+								span#today-3-=today_3
+							+b('',link_3,'Выбрать','_blank','link-3')
+		.prepayment
+			h4.prepayment-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment-bonus 1 000р. 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited 2 000р.
+			+b('',prepLink,'Оплатить 1 000р.','_blank','prepayment-link')
+		.timer
+			h4.timer-title Скидка уменьшится через:
+			.clock

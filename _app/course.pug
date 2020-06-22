@@ -1,0 +1,42 @@
+-var path = '../';
+-var head_url = 'https://granik.mastervision.su/art-of-speaking/course/';
+-var head_title = '«Искусство говорить»';
+-var head_description = 'Обучающий курс Кристины Граник';
+-var styles = path+'css/course.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/course.min.js';
+//- -var action = 'https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=';
+//- -var group = '1428';
+//- -var formId = '486';
+//- -var formVc = '2717650061';
+-var footer_title = true
+-var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3,small)
+	h3.general-title(class=cl)
+		if small
+			small= small
+		=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/course/1.main.pug
+		include pug/course/2.lets.pug
+		include pug/course/3.plan.pug
+		include pug/course/4.techs.pug
+		include pug/course/5.prices.pug
+		include pug/main/8.kristina.pug
+		include pug/course/6.last.pug
+		include pug/base/footer
+		include pug/course/7.modal.pug
+		include pug/base/scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

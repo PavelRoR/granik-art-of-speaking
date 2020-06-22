@@ -1,0 +1,10 @@
+section#main
+	.container
+		include ../base/header.pug
+		h1.main-title=head_title
+		h2.main-subtitle=head_description
+		.wrapper-decorated.wrapper-decorated-main
+			.video-wrapper.video-wrapper-main
+				iframe(src="https://www.youtube.com/embed/"+video+"?rel=0&autoplay=1&mute=1&modestbranding=1" allowfullscreen)
+		p.main-info Старт онлайн-мастер-класса: 
+			span с 24 июня, в 19:00 (МСК)
