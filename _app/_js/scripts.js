@@ -11,19 +11,20 @@ $(document).ready(function () {
             switch_text = $('.switch-text'),
             currDate = new Date(),
             startDate = new Array(
-                new Date("June 05 2020 18:30 UTC+3"),
-                new Date("June 06 2020 18:30 UTC+3"),
-                new Date("June 07 2020 18:30 UTC+3")),
+                new Date("June 24 2020 18:30 UTC+3"),
+                new Date("June 25 2020 18:30 UTC+3"),
+                new Date("June 26 2020 18:30 UTC+3")),
             endDate = new Array(
-                new Date("June 05 2020 21:00 UTC+3"),
-                new Date("June 06 2020 21:00 UTC+3"),
-                new Date("June 07 2020 21:00 UTC+3")),
+                new Date("June 24 2020 21:00 UTC+3"),
+                new Date("June 25 2020 21:00 UTC+3"),
+                new Date("June 26 2020 21:00 UTC+3")),
             rooms = new Array(
-                'https://pruffme.com/landing/u8937/tmp1590578963',
-                'https://pruffme.com/landing/u8937/tmp1590578963',
-                'https://pruffme.com/landing/u8937/tmp1590578963');
+                'https://pruffme.com/landing/u8937/tmp1592562341',
+                'https://pruffme.com/landing/u8937/tmp1592562341',
+                'https://pruffme.com/landing/u8937/tmp1592562341');
 
         function roomSwitch() {
+            $('.form-main').addClass('switch-form');
             switch_title.html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!').css('lineHeight', '1.2');
             switch_text.removeClass('hide').html('<span class="hurryup">Скорее ЗАХОДИТЕ прямо СЕЙЧАС на вебинар!</span>');
             button.text('Зайти!');
